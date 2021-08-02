@@ -9,9 +9,8 @@ const BlogLink = styled(Link)`
   text-decoration: none;
 `
 
-const BlogTitle = styled.h3`
+const BlogTitle = styled.span`
   margin-bottom: 20px;
-  color: purple;
 `
 
 export default ({ data }) => {
