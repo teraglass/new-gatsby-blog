@@ -39,7 +39,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort:{fields:[fronstmatter___date, order:DESC]}) {
+    allMarkdownRemark(sort: { fields: [fronstmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
@@ -49,7 +49,7 @@ export const query = graphql`
             description
             title
           }
-          fields{
+          fields {
             slug
           }
           excerpt
